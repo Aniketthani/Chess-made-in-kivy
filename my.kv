@@ -1,0 +1,41 @@
+<play_screen>:
+    
+    Label:
+        text:"Chess App Made By Aniket Thani"
+        font_size: 30
+        size_hint: 1,0.1
+        pos_hint: {'top':1 } 
+
+        canvas.before:
+            Color:
+                rgba:(0,0.1,0.9,1)
+            Rectangle:
+                pos:self.pos
+                size:self.size
+
+    Button:
+        text:"Play"
+        font_size:40
+        pos_hint:{'center_x':0.5,"center_y":0.5}
+        size_hint:0.4,0.1
+        on_release: self.parent.play()
+    
+        background_color:(0.9,0,0.5,1)
+
+<game_over_screen>: 
+
+    Label:
+        id:game_over_mess
+        text:""
+        font_size:40
+        pos_hint:{'center_x':0.5,"center_y":0.7}
+        size_hint:(1,0.1)
+
+    Button:
+        text:"Play Again"
+        font_size:30
+        pos_hint:{'center_x':0.5,"center_y":0.5}
+        size_hint:(0.4,0.1)
+        on_release:self.parent.play_again()
+
+        
