@@ -1,6 +1,6 @@
 # Chess-made-in-kivy
 
-apk file for running this project in android is also provided in this repository
+apk file for running this project on android is also provided in this repository
 
 Output:
 
